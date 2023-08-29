@@ -224,7 +224,7 @@ export async function loadPlayerModel(BABYLON, scene) {
     
     //parent the meshes
     box.parent = body;*/
-    const result = await SceneLoader.ImportMeshAsync("", "../assets_docs/", "animated_low-poly_spider_game-ready.glb", scene)
+    const result = await SceneLoader.ImportMeshAsync("", "/public/", "animated_low-poly_spider_game-ready.glb", scene)
     const root = result.meshes[0];
     root.scaling = root.scaling.multiply(new Vector3(0.05, 0.05, 0.05))
     

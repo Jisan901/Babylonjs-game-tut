@@ -15,7 +15,7 @@ export class Environment {
     }
     async _loadAsset() {
         //loads game environment
-        const result = await SceneLoader.ImportMeshAsync(null, "../assets_docs/", "lowpoly__fps__tdm__game__map.glb", this._scene);
+        const result = await SceneLoader.ImportMeshAsync(null, "/public/", "lowpoly__fps__tdm__game__map.glb", this._scene);
 
         let env = result.meshes[0];
         let allMeshes = env.getChildMeshes();
